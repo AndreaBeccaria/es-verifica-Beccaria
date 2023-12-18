@@ -1,0 +1,113 @@
+header
+{
+    text-align: center;
+    text-shadow: 3px 3px 3px red;
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    width:100%;
+}
+article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+#im4
+{
+    height: 400px;
+    width: 8000px;
+}
+#im5
+{
+    width: 100%;
+    box-shadow: 1px 1px 10px black;
+}
+#treno
+{
+    position:absolute;
+    z-index: 1;
+    bottom: -90px;
+    animation-name: trenoavanti;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+#semrosso
+{
+    position: absolute;
+    top:100px;
+    right:100px;
+
+}
+#semverde
+{
+    position: absolute;
+    top:100px;
+    left:40px;
+}
+@keyframes trenoavanti
+{
+    0%
+    {
+        position: absolute;
+        left:-4000px;
+        transform:scaleX(0);
+        transform: scaleY(1);
+    }
+    25%
+    {
+        left:500px;
+        transform: scaleX(-0.5);
+        transform:scaleY(1)
+    }
+    50%
+    {
+        left:4000px;
+        transform:scaleX(-1);
+        transform: scaleY(1);
+    }
+    51%
+    {
+        left:4000px;
+        transform:scaleX(-1);
+        transform: scaleY(1);
+    }
+    75%
+    {
+        left:500px;
+        transform:scaleX(-0.5);
+        transform: scaleY(1);
+    }
+    100%
+    {
+        left:-4000px;
+        transform:scaleX(0);
+        transform: scaleY(1);
+    }
+}
+#warning
+{
+    position:absolute;
+    top:780px;
+    left:1200px;
+    z-index: 1;
+}
+#warning:hover
+{
+    transform: rotate(50deg);
+    border:2px solid yellow;
+    box-shadow: 1px 1px 1px white;
+}
+
+footer
+{
+    position: relative;
+    top: 520px;
+    text-align: center;
+}
